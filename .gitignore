@@ -1,4 +1,4 @@
-**/
-!**/tmux
-!**/nvim
-mineapps.list
+*/*
+!**/tmux/*
+!**/nvim/*
+mimeapps.list
