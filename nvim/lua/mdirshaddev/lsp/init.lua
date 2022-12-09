@@ -1,6 +1,5 @@
 local lsp_keymaps = require("mdirshaddev.lsp.keymaps")
 local servers = {
-	"astro",
 	"cssls",
 	"cssmodules_ls",
 	"dockerls",
@@ -12,9 +11,7 @@ local servers = {
 	"sumneko_lua",
 	"marksman",
 	"prismals",
-	"svelte",
 	"tailwindcss",
-	"volar",
 	"yamlls",
 }
 
@@ -25,7 +22,7 @@ require("nvim-lsp-installer").setup({
 
 -- Initialise cmp lsp autocompletion
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
+capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
 local lspconfig = require("lspconfig")
 
